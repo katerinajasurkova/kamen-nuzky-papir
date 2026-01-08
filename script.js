@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // remíza
-    if (hrac == pc) {
+    if (hrac === pc) {
       vitez1.innerHTML = "Remíza";
       vitez2.innerHTML = "Remíza";
     }
 
     // výhry hráče
     else if (
-      (hrac == 0 && (pc == 1 || pc == 3)) ||
-      (hrac == 1 && (pc == 2 || pc == 3)) ||
-      (hrac == 2 && (pc == 0 || pc == 4)) ||
-      (hrac == 3 && (pc == 2 || pc == 4)) ||
-      (hrac == 4 && (pc == 0 || pc == 1))
+      (hrac === 0 && (pc === 1 || pc === 3)) ||
+      (hrac === 1 && (pc === 2 || pc === 3)) ||
+      (hrac === 2 && (pc === 0 || pc === 4)) ||
+      (hrac === 3 && (pc === 2 || pc === 4)) ||
+      (hrac === 4 && (pc === 0 || pc === 1))
     ) {
       vitez1.innerHTML = "Vyhrál";
       vitez2.innerHTML = "Prohrál";
